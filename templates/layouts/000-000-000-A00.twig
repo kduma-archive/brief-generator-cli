@@ -1,0 +1,20 @@
+{% box 25, 5, 30 with {"class": "main center"} as table %}
+    {{ column_0 | slice(8, 3) }}
+{% endBox %}
+
+{% box 5, 9, 20 with {"class": "secondary left"} as table %}
+    {{ column_0 | slice(4, 3) }}
+{% endBox %}
+
+{% box 55, 9, 20 with {"class": "secondary right"} as table %}
+    {{ column_0 | slice(12, 1) }}
+    {{ column_0 | slice(13, 2) }}
+{% endBox %}
+
+{% box 2.5, 18, 80-2*2.5 with {"class": "barcode center"} as table %}
+    <barcode code="{{ column_0 }}" type="C128B" height="5.7" />
+{% endBox %}
+
+{% box 5, 70, 80-2*5 with {"class": "barcode_human center"} as table %}
+    {{ column_0 }}
+{% endBox %}

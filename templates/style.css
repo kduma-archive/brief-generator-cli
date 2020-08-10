@@ -1,0 +1,27 @@
+.body {
+    font-family: monospace;
+}
+
+.barcode_human {
+    font-size:4mm;
+}
+
+.main {
+    font-size:8mm;
+}
+
+.secondary {
+    font-size:5mm;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
